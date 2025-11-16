@@ -1,0 +1,382 @@
+/* General Header */
+.tripHeader {
+  width: 100%;
+  height: 550px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.473), rgb(8, 8, 8));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+
+.overlay h3 {
+  font-size: 37px;
+  width: 45%;
+  text-align: center;
+  line-height: 1.4;
+  font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+/* Events grid section */
+.deals-container-1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Poppins, sans-serif;
+  margin-top: 40px;
+}
+
+.caption-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.deals-h1-1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.deals-container-1 p {
+  font-size: 1em;
+  color: #888;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.deals-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-bottom: 20px;
+}
+
+.deal-card-1 {
+  background: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.deal-image-1 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.deal-image-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+.discount-badge-1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffc107;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.7em;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+}
+
+.heart-icon-1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.deal-info-1 {
+  padding: 15px;
+}
+
+.deal-info-1 h3 {
+  font-size: 18px;
+  margin: 0 0 5px;
+  color: white;
+  line-height: 1.7;
+}
+
+.location1-1 {
+  font-size: 0.9em;
+  color: #fff;
+  margin: 0 0 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating-1 {
+  font-size: 0.85em;
+  color: #aaa;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.route-1 {
+  color: #888;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.route-actions-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.register-btn-1 {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85em;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.register-btn-1:hover {
+  background: #218838;
+}
+
+.register-btn-1.disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.bookmark {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.controls-1 {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.select {
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-weight: bold;
+}
+
+.select option {
+  background-color: #222222;
+  border: none;
+  color: white;
+}
+
+.select-div-button,
+.select-div-button-1 {
+  min-width: 140px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.639);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.select-div-button select:focus,
+.select-div-button-1 select:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .deals-grid-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .deals-h1-1 {
+    font-size: 32px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .caption-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .deals-grid-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .controls-1 {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .deals-grid-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .deals-h1-1 {
+    font-size: 24px;
+  }
+
+  .deal-info-1 h3 {
+    font-size: 16px;
+  }
+
+  .controls-1 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+.overlay h3 {
+    font-size: 35px;
+    width: 48%;
+    text-align: center;
+    line-height: 1.4;
+    font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+}
+
+
+@media screen and (max-width: 1076px) {
+.overlay h3 {
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.4;
+    font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+}
+
+
+
+@media screen and (max-width: 898px) {
+.overlay h3 {
+    font-size: 35px;
+    width: 60%;
+    text-align: center;
+    line-height: 1.4;
+    font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+}
+
+
+@media screen and (max-width: 810px) {
+.overlay h3 {
+    font-size: 30px;
+    width: 60%;
+    text-align: center;
+    line-height: 1.4;
+    font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+}
+
+@media screen and (max-width: 796px) {
+    .caption-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .caption-sub{
+        width: 100%;
+        gap: 5%;
+    }
+}
+
+
+
+@media screen and (max-width: 591px) {
+    .overlay h3 {
+    font-size: 30px;
+    width: 90%;
+    text-align: center;
+    line-height: 1.4;
+    font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+}
+
+
+@media screen and (max-width: 482px) {
+    .overlay h3 {
+    font-size: 27px;
+    width: 90%;
+    text-align: center;
+    line-height: 1.4;
+    font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+}
+
+
+@media screen and (max-width: 411px) {
+    .overlay h3 {
+    font-size: 22px;
+    width: 90%;
+    text-align: center;
+    line-height: 1.6;
+    font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+}
+
+
+@media screen and (max-width: 365px) {
+     .overlay h3 {
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+    line-height: 1.6;
+    font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+}

@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.carousel-container4 {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  padding: 40px 40px;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+.carousel-header4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.header-left4 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 20px;
+}
+
+.header-right4 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-label4 {
+  color: #ff9500;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.header-title4 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.nav-buttons4 {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-button4 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.nav-button4:hover {
+  background: #000;
+  border-color: #bdbdbd;
+  color: white;
+  transform: scale(1.05);
+}
+
+.nav-button4:active {
+  transform: scale(0.95);
+}
+
+.view-all-btn4 {
+  background: transparent;
+  border: 2px solid #e0e0e0;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-all-btn4:hover {
+  border-color: #bdbdbd;
+  transform: translateY(-2px);
+}
+
+.cards-container4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card4 {
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  background: white;
+  border-radius: 24px;
+  /* Remove overflow: hidden to allow flag to extend beyond card boundaries if needed */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative; /* Establish a stacking context */
+}
+
+.card4:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.card-image4 {
+  position: relative;
+  height: 280px;
+  background: #000;
+  border-radius: 24px 24px 0 0;
+  overflow: hidden; /* Keep this on card-image4 to control image clipping */
+  z-index: 1; /* Base z-index for the image container */
+}
+
+.card-image4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flag-circle44 {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 36px;
+  top: 200px; /* Adjust based on card-image4 height (280px - some margin) */
+  z-index: 210;
+}
+
+
+
+.card-content4 {
+  padding: 36px 32px 32px;
+  background: #222222;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 24px 24px;
+  position: relative; /* Ensure it has its own stacking context */
+  z-index: 0; /* Lower than flag-circle44 */
+}
+
+.country-name4 {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 12px 0;
+}
+
+.description4 {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #bbb;
+  margin: 0 0 24px 0;
+  font-style: italic;
+  flex-grow: 1;
+}
+
+.card-footer4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #000;
+}
+
+.tours-badge4 {
+  color: #d4a574;
+  font-weight: 600;
+}
+
+.view-tours-link4 {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.3s ease;
+}
+
+.view-tours-link4:hover {
+  color: #d4a574;
+  transform: translateX(4px);
+}
+
+
+@media screen and (max-width: 1212px) {
+  .flag-circle44 {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 36px;
+  top: 180px; /* Adjust based on card-image4 height (280px - some margin) */
+  z-index: 210;
+}
+
+}
+
+
+/* Tablet (≤1072px) → grid of 2 */
+@media screen and (max-width: 1072px) {
+  .cards-container4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .flag-circle44 {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 36px;
+  top: 190px; /* Adjust based on card-image4 height (280px - some margin) */
+  z-index: 210;
+}
+}
+
+/* Mobile (≤768px) → show only ONE card full width */
+@media screen and (max-width: 768px) {
+  .cards-container4 {
+    display: flex;
+    overflow-x: hidden; /* no free scrolling */
+    justify-content: center;
+  }
+
+  .card4 {
+    flex: 0 0 100%;
+    max-width: 420px;   /* keeps nice proportion like the mockup */
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .card-image4 {
+    height: 220px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .flag-circle44 {
+    width: 48px;
+    height: 48px;
+    top: 160px;
+    left: 20px;
+  }
+
+  .card-content4 {
+    padding: 20px;
+  }
+
+  .country-name4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .description4 {
+    font-size: 13px;
+    margin-bottom: 12px;
+    color: #777;
+  }
+
+  .card-footer4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+  }
+
+  .tours-badge4 {
+    font-size: 14px;
+    color: #ff9500;
+    font-weight: 600;
+  }
+
+  .view-tours-link4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+  }
+}
+
+/* Small Mobile (≤480px) */
+@media screen and (max-width: 480px) {
+  .card4 {
+    max-width: 100%;
+  }
+
+  .card-image4 {
+    height: 180px;
+  }
+
+  .flag-circle44 {
+    width: 40px;
+    height: 40px;
+    top: 140px;
+    left: 16px;
+  }
+
+  .country-name4 {
+    font-size: 18px;
+  }
+
+  .description4 {
+    font-size: 12px;
+  }
+
+  .tours-badge4,
+  .view-tours-link4 {
+    font-size: 12px;
+  }
+  
+}
+
+@media screen and (max-width: 826px) {
+   .flag-circle44 {
+    top: 170px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .view-all-btn4 {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.flag-circle44 {
+    top: 193px;
+  }
+
+  .header-title4 {
+  font-size:35px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+}
+
+
+@media screen and (max-width: 481px) {
+  .flag-circle44 {
+    top: 160px;
+  }
+
+  .view-all-btn4 {
+    background: transparent;
+    border: 1px solid #e0e0e0;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+.nav-button4 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+.header-left4 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 0px;
+}
+
+}
+
+
+
+@media screen and (max-width: 421px) {
+  .header-title4 {
+  font-size:25px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -1px;
+}
+}
+
+
+@media screen and (max-width: 421px) {
+  
+  .view-all-btn4 {
+    font-size: 8px;
+  }
+  .carousel-container4 {
+  width: 100%;
+  min-height: 70vh;
+  background: #000;
+  padding: 40px 40px;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+}
+
+@media screen and (max-width: 768px) {
+   .carousel-container4 {
+  width: 100%;
+  min-height: 70vh;
+  background: #000;
+  padding: 40px 40px;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+}

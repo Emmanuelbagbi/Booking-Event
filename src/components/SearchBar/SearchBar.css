@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.reservation-form23 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  gap: 0.5rem; /* add small gap between inputs on smaller screens */
+}
+
+
+.search-box,
+.location-box {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0.6rem 1rem;
+  min-width: 0; /* allow flex shrinking */
+}
+
+.search-box {
+  border-right: 1px solid #ddd;
+}
+
+.search-box .icon43,
+.location-box .icon43 {
+  margin-right: 0.5rem;
+  font-size: 18px;
+  color: #444;
+}
+
+.search-box input,
+.location-box input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+  width: 100%;
+  background: transparent;
+}
+
+.search-btn23 {
+  background: #1D4674; 
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 0.5rem;
+}
+
+.search-btn:hover {
+  background: #1D4674;
+}
+
+.search-btn svg {
+  font-size: 18px;
+}
+
+.reservation-main { 
+  display: flex; 
+  gap: 1rem; 
+  background: transparent; 
+  padding: 1rem; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+  align-items: center; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  width: 99%; 
+  height: 120px; 
+  margin: auto; 
+  z-index: 1; 
+  position: relative; }
+
+/* Add to existing CSS */
+.search-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+  transition: background 0.2s ease;
+}
+
+.suggestion-item:hover {
+  background: #f5f5f5;
+}
+
+
+@media (max-width: 768px) {
+  .reservation-form23 {
+    flex-direction: row;
+    align-items: stretch;
+    border-radius: 16px;
+    max-width: 100%;
+    border-radius: 40px;
+    height: 60px;
+  }
+
+  .search-box,
+  .location-box {
+    border: none;
+    padding: 0.5rem 0.8rem;
+    width: 100%;
+  }
+
+  .location-box{
+    display: none;
+  }
+
+  .search-box {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .search-btn {
+    align-self: center;
+    margin: 0.5rem 0 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reservation-form23 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    gap: 0.5rem;
+}
+.search-btn23{
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    padding: 0;
+    margin-left: 0.2rem;
+}
+ .search-box {
+     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+}

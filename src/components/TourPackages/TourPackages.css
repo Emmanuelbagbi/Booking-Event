@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.tour-packages {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #000;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+
+.description {
+  color: #fff;
+  width: 38%;
+  margin-bottom: 30px;
+  text-align: start;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.tour-grid {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  -webkit-overflow-scrolling: touch; 
+  /* For smooth scrolling on iOS */
+}
+
+.tour-grid::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for a cleaner look */
+}
+
+.tour-card {
+  flex: 0 0 auto;
+  width: 350px;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.228);
+  background: #0000005f;
+  transition: transform 0.3s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  color: #fff;
+  height: 50px;
+}
+
+.likes{
+    width: 50%;
+    display: flex;
+   padding-left: 10px;
+   gap: 10px;
+}
+
+
+.card-header .likes, .card-header .price-tag, .card-header .days {
+  font-size: 0.9em;
+}
+
+.toured-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.tour-info {
+  padding: 15px;
+  text-align: start;
+  color: #fff;
+}
+
+.tour-info p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.tour-info .price-value {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.tour-info .location {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.card-header-description{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-box{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.days{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    gap: 10px;
+}
+
+.tour-content{
+    margin-top: 60%;
+}
+
+.tour-title{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 18px;
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 1168px) {
+      .tour-card {
+      flex: 0 0 auto;
+      width: 330px;
+      height: 400px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.228);
+      background: #0000005f;
+      transition: transform 0.3s;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: darken;
+    }
+
+    .controls {
+      display: flex;
+      gap: 15px;
+    }
+}
+
+
+@media screen and (max-width: 506px) {
+  .header h1 {
+  font-size: 1.8em;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+}
+
+
+@media screen and (max-width: 437px) {
+  .header h1 {
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .description{
+    font-size: 14px;
+    width: 30%;
+  }
+}
+
+
+@media screen and (max-width: 421px) {
+  
+  
+}

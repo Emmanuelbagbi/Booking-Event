@@ -1,0 +1,107 @@
+.section {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* text aligned left */
+  padding-left: 60px;
+  color: white;
+  text-align: left;
+
+  background-image: url('/src/assets/Images/IMG_3558.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: darken;
+}
+
+.promo-content {
+  max-width: 600px;
+}
+
+.sale {
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.discount232 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.discount232 .badge232 {
+  background: #e74c3c; /* red badge */
+  color: white;
+  font-size: 1rem;
+  padding: 5px 12px;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.description373{
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background: orange;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: darkorange;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: black;
+}
+
+
+@media screen and (max-width: 506px) {
+  .section{
+    padding-left: 10px;
+  }
+  .description373{
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  width: 90%;
+}
+}
+
+
+
+@media screen and (max-width: 421px) {
+  .btn {
+  font-size: 14px;
+}
+
+}

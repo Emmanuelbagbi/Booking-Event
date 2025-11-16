@@ -1,0 +1,64 @@
+:root {
+  --sidebar-bg-1: rgba(17, 24, 39, 0.95); /* dark sidebar */
+  --sidebar-header-bg-1: linear-gradient(135deg, #3B82F6, #1E40AF); /* blue gradient */
+  --text-primary-1: #F9FAFB; /* near white */
+  --text-secondary-1: #9CA3AF; /* gray */
+  --accent-color-1: #3B82F6; /* blue accent */
+  --accent-hover-1: #2563EB; /* darker blue */
+  --border-color-1: rgba(255, 255, 255, 0.1); /* subtle border */
+  --shadow-light-1: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] {
+  --bg-gradient-start-1: #0F172A; /* deep navy */
+  --bg-gradient-end-1: #1E293B;   /* slate */
+  --sidebar-bg-1: rgba(17, 24, 39, 0.95);
+  --sidebar-header-bg-1: linear-gradient(135deg, #3B82F6, #8B5CF6); /* blue-purple */
+  --card-bg-1: #1E293B; /* card background */
+  --text-primary-1: #F9FAFB;
+  --text-secondary-1: #9CA3AF;
+  --accent-color-1: #3B82F6;
+  --accent-hover-1: #2563EB;
+  --border-color-1: rgba(255, 255, 255, 0.1);
+  --shadow-light-1: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-hover-1: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+
+.admin-dashboard-1 {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--bg-gradient-start-1), var(--bg-gradient-end-1));
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+[data-theme="dark"] .admin-dashboard-1 {
+  background: linear-gradient(135deg, var(--bg-gradient-start-1), var(--bg-gradient-end-1));
+}
+
+.main-content-1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 260px; /* Offset main content to account for fixed sidebar */
+}
+
+.content-area-1 {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard-1 {
+    flex-direction: column;
+  }
+
+  .main-content-1 {
+    margin-left: 0; /* Remove offset on mobile */
+  }
+
+  .content-area-1 {
+    padding: 1rem;
+  }
+}

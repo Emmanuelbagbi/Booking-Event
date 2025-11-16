@@ -1,0 +1,29 @@
+/* :root {
+  --text-primary-1: #1e293b;
+} */
+
+[data-theme="dark"] {
+  --sidebar-bg-1: rgba(31, 31, 31, 0.95);
+  --sidebar-header-bg-1: linear-gradient(135deg, #4c51bf, #1D4674);
+  --text-primary-1: #ecf0f1;
+  --text-secondary-1: #a0aec0;
+  --accent-color-1: #1D4674;
+  --accent-hover-1: #1D4674;
+  --border-color-1: rgba(0, 0, 0, 0.2);
+  --shadow-light-1: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+.settings-section-1 {
+  padding: 2rem;
+}
+
+.settings-section-1 h3 {
+  margin: 0 0 1rem 0;
+  color: var(--text-primary-1);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.settings-section-1 p {
+  color: var(--text-primary-1);
+  font-size: 1rem;
+}

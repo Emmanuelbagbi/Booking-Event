@@ -1,0 +1,394 @@
+.locations {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+
+.plan2{
+  width: 80%;
+  height: 90px;
+  color: white;
+   line-height: 1.9;
+   padding-left: 40px;
+}
+
+.plan h1{
+  font-size: 30px;
+}
+
+.locations-header{
+  width: 99%;
+  height: 100px;
+}
+
+.locations-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.plan1{
+  width: 150%;
+  height: 90px;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan3{
+  width: 70%;
+  height: 90px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.content-div{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  padding: 30px;
+}
+
+.section1{
+  width: 30%;
+  height: 400px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/src/assets/Images/Safari-park.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.523);
+}
+
+.section3{
+  width: 30%;
+  height: 400px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/src/assets/Images/jetski-circle.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.523);
+}
+
+
+.section2{
+  width: 40%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 9%;
+}
+
+.section1-holder{
+  width: 90%;
+  height: 370px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.five{
+  width: 17%;
+  height: 27px;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11%;
+}
+
+.details{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 8px;
+}
+
+.details span{
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.details h1{
+  color: white;
+  font-size: 16px;
+}
+
+.detail-icon{
+  font-weight: normal;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.details p{
+  font-size: 12px;
+}
+
+
+.section2A{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+   background-image: url(/src/assets/Images/bali.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.section2B{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+   background-image: url(/src/assets/Images/BaliZoo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.523);
+   
+}
+
+
+
+.section2A-holder{
+  width: 90%;
+  height: 140px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+
+/* Base stays same */
+
+/* Tablet and below (≤1072px) */
+@media screen and (max-width: 1072px) {
+  .content-div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .section1,
+  .section3 {
+    width: 90%;
+    height: 300px;
+  }
+
+  .section2 {
+    width: 90%;
+    flex-direction: row;
+    gap: 15px;
+    height: auto;
+  }
+
+  .section2A,
+  .section2B {
+    width: 48%;
+    height: 220px;
+  }
+
+  .section1-holder,
+  .section2A-holder {
+    height: 100%;
+    justify-content: flex-end; /* push content to bottom */
+  }
+
+  .five {
+    margin-bottom: auto; 
+    margin-top: 10px;/* star rating stays at top */
+  }
+
+  .details {
+    margin-top: auto; 
+    /* details go to bottom */
+  }
+
+  .details h1 {
+    font-size: 15px;
+  }
+
+  .details p {
+    font-size: 12px;
+  }
+
+  .section3{
+  background-image: url(/src/assets/Images/slider6.jpg);
+}
+}
+
+
+
+
+@media screen and (max-width: 917px) {
+  .section1,
+  .section3{
+    width: 100%;
+  }
+
+  .section2A,
+  .section2B {
+    width: 50%;
+    height: 220px;
+  }
+
+  .section2{
+    width: 100%;
+  }
+  
+}
+
+
+
+/* Mobile (≤768px) */
+@media screen and (max-width: 768px) {
+  .plan2 {
+    padding-left: 15px;
+    line-height: 1.4;
+  }
+
+  .plan2 h1 {
+    font-size: 22px;
+  }
+
+  .content-div {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .section1,
+  .section2,
+  .section3 {
+    width: 100%;
+    height: 250px;
+  }
+
+  .section2 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .section2A,
+  .section2B {
+    width: 100%;
+    height: 200px;
+  }
+
+  .section1-holder,
+  .section2A-holder {
+    padding: 10px;
+    justify-content: flex-end;
+  }
+
+  .five {
+    margin-bottom: auto;
+  }
+
+  .details h1 {
+    font-size: 14px;
+  }
+
+  .details p {
+    font-size: 11px;
+  }
+}
+
+/* Small Mobile (≤480px) */
+@media screen and (max-width: 480px) {
+  .plan2 h1 {
+    font-size: 18px;
+  }
+
+  .section1,
+  .section2A,
+  .section2B,
+  .section3 {
+    height: 200px;
+  }
+
+  .five {
+    width: 25%;
+    height: 22px;
+    font-size: 11px;
+  }
+
+  .details {
+    gap: 5px;
+  }
+
+  .details h1 {
+    font-size: 12px;
+  }
+
+  .details p {
+    font-size: 10px;
+  }
+
+  .detail-icon {
+    font-size: 10px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .section2{
+    height: auto;
+  }
+
+   .section2A,
+  .section2B {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+
+@media screen and (max-width: 481px) {
+
+}
