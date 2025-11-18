@@ -17,7 +17,6 @@ const SignUp: React.FC = () => {
             <input type="text" placeholder="Last Name" required />
             {/* <input type="text" placeholder="Username" required /> */}
             <input type="email" placeholder="Email Address" required />
-            <input type="tel" placeholder="Phone Number" required />
             <input type="password" placeholder="Password" required />
             <button type="submit">Register</button>
           </form>
